@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException
 from sqlmodel import Session, select
 from database import engine, get_session
 from models import Cliente, Factura
+from sqlmodel import SQLModel
 
 app = FastAPI(title="API de Clientes y Facturas", version="1.0")
 
